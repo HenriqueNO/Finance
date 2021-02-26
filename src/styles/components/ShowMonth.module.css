@@ -1,0 +1,33 @@
+.showMonthContainer {
+    height: 10rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    align-items: center;
+    
+}
+
+.showMonthContainer h2 {
+    text-align: center;
+}
+
+.showMonthDates {
+    margin-top: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.showMonthIncome {
+    width: 50%;
+    display: grid;
+    margin-right: 1rem;
+}
+
+.showMonthExpense {
+    width: 50%;
+    display: grid;
+    margin-left: 1rem;
+}
