@@ -1,12 +1,44 @@
-.tableItemsContainer {
-    height: 100%;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 1rem;
-    align-items: center;
-    
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 3px;
 }
 
-.tableItemsTable table {
-    border: 1px solid black
+.container > div {
+  background-color: var(--background);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  min-height: 10rem;
+}
+
+.container div h2 {
+  display: grid;
+  justify-items: center;
+}
+
+.index {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  margin-top: .5rem;
+}
+
+.items div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  margin-top: .3rem
+}
+
+.container div div label{
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: none;
+  }
 }

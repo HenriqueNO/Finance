@@ -1,0 +1,42 @@
+.container {
+  display: grid;
+  padding: 1rem;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  background-color: var(--background);
+  border-radius: 5px 5px 0px 0px;
+}
+
+.monthSelector {
+  text-align: center;
+}
+
+.monthSelector div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monthSelector div p {
+  font-weight: 600;
+}
+
+.monthSelector div button {
+  padding: .5em 1em;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.tableIndex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  margin-top: .5rem;
+}
+
+.tableIndex div {
+  justify-self: center;
+}
+
+.tableIndex div strong {
+  display: flex;
+}

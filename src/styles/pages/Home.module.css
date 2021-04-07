@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  padding: 1rem 1.5rem;
+}
+
+.container > div {
+  display: grid;
+  gap: 3px;
+  max-width: 900px;
+  height: 90vh;
+  margin: 0 auto;
+  border-radius: 10px;
+}
