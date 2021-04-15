@@ -1,6 +1,22 @@
+import { useContext } from 'react'
+import { TableContext } from '../contexts/TableContext'
 import styles from '../styles/components/InfoMonth.module.css'
 
 export function InfoMonth() {
+  const {items} = useContext(TableContext)
+  var realValor = {
+    realIncome: 0,
+    realExpense: 0
+  }
+
+  items.income.forEach((e) => {
+    realValor.realIncome += e.price
+  })
+
+  items.expense.forEach((e) => {
+    realValor.realExpense += e.price
+  })
+
   return (
       <header className={styles.container}>
         <div className={styles.monthSelector}>
@@ -19,7 +35,7 @@ export function InfoMonth() {
         <div className={styles.tableIndex}>
           <div>
             <strong>
-              Real income: R${'1000,00'}
+              Real income: R${realValor.realIncome}
             </strong>
             <strong>
               Goal income: R${'300,00'}
@@ -28,7 +44,7 @@ export function InfoMonth() {
 
           <div>
             <strong>
-              Real expense: R${'1000,00'}
+              Real expense: R${realValor.realExpense}
             </strong>
             <strong>
               Goal expense: R${'300,00'}

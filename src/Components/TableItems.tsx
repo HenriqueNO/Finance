@@ -1,6 +1,10 @@
+import { useContext } from 'react'
+import { TableContext } from '../contexts/TableContext'
 import styles from '../styles/components/TableItems.module.css'
 
 export function TableItems() {
+  const {items} = useContext(TableContext)
+
   return (
     <div className={styles.container}>
       <div className={styles.incomeTable}>
@@ -13,30 +17,16 @@ export function TableItems() {
         </div>
 
         <div className={styles.items}> 
-          <div>
-            <p>12/12/20</p>
-            <p>100,00</p>
-            <p>Compra</p>
-            <p>Mercado</p>
-          </div>
-          <div>
-            <p>12/12/20</p>
-            <p>100,00</p>
-            <p>Compra</p>
-            <p>Mercado</p>
-          </div>
-          <div>
-            <p>12/12/20</p>
-            <p>100,00</p>
-            <p>Compra</p>
-            <p>Mercado</p>
-          </div>
-          <div>
-            <p>12/12/20</p>
-            <p>100,00</p>
-            <p>Compra</p>
-            <p>Mercado</p>
-          </div>
+          {items.income.map((e, i) => {
+            return(
+              <div key={i}>
+                <p>{e.date}</p>
+                <p>{e.price}</p>
+                <p>{e.description}</p>
+                <p>{e.category}</p>
+              </div>
+            )
+          })}
         </div>
       </div>
 
@@ -50,12 +40,16 @@ export function TableItems() {
         </div>
 
         <div className={styles.items}>
-          <div>
-            <p>12/12/20</p>
-            <p>100,00</p>
-            <p>Compra</p>
-            <p>Mercado</p>
-          </div>
+        {items.expense.map((e, i) => {
+            return(
+              <div key={i}>
+                <p>{e.date}</p>
+                <p>{e.price}</p>
+                <p>{e.description}</p>
+                <p>{e.category}</p>
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>
