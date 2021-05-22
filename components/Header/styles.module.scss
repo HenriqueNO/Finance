@@ -1,0 +1,32 @@
+.container {
+  margin: auto;
+  height: 4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--yellow-100);
+  padding: 2rem;
+
+  h1 {
+    font-family: 'Fugaz One';
+    font-size: 3rem;
+    color: var(--yellow-500)
+  }
+
+  p, span {
+    align-items: center;
+    font-family: 'inter', sans-serif;
+  }
+
+  span {
+    text-transform: capitalize;
+  }
+}
+
+@media(max-width: 720px) {
+  .container p {
+    display: none;
+  }
+}

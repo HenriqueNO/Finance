@@ -1,0 +1,36 @@
+.walletContainer {
+  background: var(--gray-200);
+  padding: .5rem 1.5rem;
+  border-radius: 5px;
+
+  div {
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    padding: .5rem;
+
+    &:hover {
+      background-color: var(--gray-300);
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.appendWallet {
+  background: var(--purple-100);
+    border: 1px solid var(--purple-500);
+    border-radius: 50%;
+    padding: .5rem .8rem;
+    font-weight: 800;
+    color: var(--gray-100);
+
+    margin-top: .3rem;
+    justify-self: center;
+    transition: background .3s;
+
+    &:hover {
+      background: #5519FFdd;
+    }
+}

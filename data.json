@@ -1,0 +1,41 @@
+{
+  "4" : {
+    "income": [
+      {"date": "04/04/2021", "price": "10", "description": "adsense", "category": "Salario"},
+      {"date": "04/04/2021", "price": "0,30", "description": "juros compostos", "category": "investimento"},
+      {"date": "03/04/2021", "price": "60", "description": "venda de BIDI3", "category": "Investimento"},
+      {"date": "03/04/2021", "price": "500", "description": "serviço", "category": "freelance"},
+      {"date": "06/04/2021", "price": "2000", "description": "venda do mes", "category": "trabalho"}
+    ],
+    "expense": [
+      {"date": "10/04/2020", "price": "600", "description": "compra", "category": "mercado"},
+      {"date": "10/04/2020", "price": "610", "description": "compra", "category": "mercado"},
+      {"date": "10/04/2020", "price": "620", "description": "compra", "category": "mercado"},
+      {"date": "10/04/2020", "price": "630", "description": "compra", "category": "mercado"},
+      {"date": "10/04/2020", "price": "640", "description": "compra", "category": "mercado"},
+      {"date": "10/04/2020", "price": "650", "description": "compra", "category": "mercado"},
+      {"date": "10/04/2020", "price": "660", "description": "compra", "category": "mercado"},
+      {"date": "10/04/2020", "price": "670", "description": "compra", "category": "mercado"},
+      {"date": "10/04/2020", "price": "680", "description": "compra", "category": "mercado"},
+      {"date": "10/04/2020", "price": "690", "description": "compra", "category": "mercado"},
+      {"date": "10/04/2020", "price": "611", "description": "compra", "category": "mercado"},
+      {"date": "10/04/2020", "price": "600", "description": "compra", "category": "mercado"},
+      {"date": "11/04/2020", "price": "10", "description": "Devour", "category": "jogo"},
+      {"date": "13/04/2020", "price": "33", "description": "bf4", "category": "jogo"},
+      {"date": "13/04/2020", "price": "111", "description": "fortnite", "category": "jogo"},
+      {"date": "14/04/2020", "price": "300", "description": "jj", "category": "jogo"},
+      {"date": "16/04/2020", "price": "12", "description": "sfsdfas", "category": "jogo"},
+      {"date": "14/04/2020", "price": "500", "description": "dsgsag", "category": "jogo"},
+      {"date": "05/04/2020", "price": "12", "description": "fadfda", "category": "jogo"},
+      {"date": "09/04/2020", "price": "32", "description": "fsadfsd", "category": "jogo"},
+      {"date": "25/04/2020", "price": "764", "description": "sadfasdf", "category": "jogo"},
+      {"date": "20/04/2020", "price": "555", "description": "afadffsd", "category": "jogo"}
+    ]
+  },
+  "5": {
+    "income": [
+      {"date": "01/05/2021", "price": "12", "description": "juros compostos", "category": "investimento"}
+    ],
+    "expense": []
+  }
+}
